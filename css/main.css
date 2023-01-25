@@ -69,7 +69,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/content/background.png") no-repeat;
+  background: url("./../img/content/background.png") no-repeat;
   background-size: cover;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -104,7 +104,7 @@ img {
 
 .hero__title-desc {
   font-size: 21px;
-  margin-bottom: 54px;
+  margin-bottom: 37px;
 }
 
 .hero__title-section {
@@ -193,6 +193,8 @@ img {
 }
 
 .button {
+  display: block;
+  width: 156px;
   font-size: 16px;
   font-weight: 800;
   padding: 21px 41px;
@@ -252,7 +254,7 @@ img {
 
 .order-section {
   background-attachment: fixed;
-  background: url("../../img/content/background-order.png") no-repeat;
+  background: url("./../img/content/background-order.png") no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 652px;
@@ -291,7 +293,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/content/separator.png");
+  content: url("./../img/content/separator.png");
   position: absolute;
   top: 60px;
   right: 0;
@@ -359,6 +361,7 @@ img {
 .reviews__avatar {
   width: 253px;
   height: 264px;
+  margin-right: 40px;
 }
 
 .reviews__avatar-img {
@@ -382,7 +385,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 40px;
 }
 
 .reviews__title {
@@ -417,6 +419,14 @@ img {
   width: 74px;
   height: 74px;
   border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.interactive-avatar:hover {
+  width: 74px;
+  height: 74px;
+  border: 6px solid #FEDB3F;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -532,8 +542,8 @@ img {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../../img/icons/check.svg") center center no-repeat;
-  background-size: cover;
+  background: url("./../img/pngicons/check.png") center center no-repeat;
+  background-size: cover cover;
 }
 
 .radio__elem {
