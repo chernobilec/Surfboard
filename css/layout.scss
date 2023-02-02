@@ -2,12 +2,23 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: $basefontsize;
+
+  @include tablets {
+    font-size: $basefontsize - 1px;
+  }
+
+  @include phones {
+    font-size: $basefontsize - 2px;
+  }
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  font-size: $basefontsize;
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +28,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
+  margin: rem(0px);
   font-weight: normal;
 }
 
@@ -26,8 +37,8 @@ table {
 }
 
 ul {
-  padding: 0px;
-  margin: 0px;
+  padding: rem(0px);
+  margin: rem(0px);
   li {
     list-style: none;
   }
@@ -56,11 +67,13 @@ img {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-width: $containerwidth + 20px;
   min-height: 100%;
+
 }
 
 .container  {
+  width: 95%;
+  max-width: $containerwidth;
   margin: 0 auto;
-  width: $containerwidth;
+  position: relative;
 }

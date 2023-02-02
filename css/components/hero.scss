@@ -1,11 +1,11 @@
 .hero {
   background: url("./../img/content/background.png") no-repeat;
   background-size: cover;
-  // border: 1px solid rgba(0, 0, 0, 1);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  // border: rem(1px) solid rgba(0, 0, 0, 1);
+  filter: drop-shadow(rem(0px) rem(4px) rem(4px) rgba(0, 0, 0, 0.25));
   height: 100vh;
-  // max-height: 652px;
-  min-height: 652px;
+  // max-height: rem(652px);
+  min-height: rem(652px);
   color: #fff;
 }
 
@@ -14,21 +14,21 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 25px 0 61px;
+  padding: rem(25px) 0 rem(61px);
 }
 
 .hero__main-title {
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.2;
   font-weight: 700;
-  margin-bottom: 17px;
-  margin-top: 22px;
+  margin-bottom: rem(17px);
+  margin-top: rem(22px);
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 37px;
+  font-size: rem(21px);
+  margin-bottom: rem(37px);
 }
 
 .hero__title-section {

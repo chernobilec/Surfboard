@@ -1,12 +1,19 @@
 $containerwidth: 940px;
 $basefontsize: 18px;
 
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $yellow: #FEDB3F;
 $dyellow: #FFD517;
 $blue: #3465A3;
 $dblue: #3A587E;
 $lgrey: #F8FAF9;
+
+@import "media";
 
 //z-indexes
 $z-fixed-menu: 100;
