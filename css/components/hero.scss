@@ -7,7 +7,21 @@
   // max-height: rem(652px);
   min-height: rem(652px);
   color: #fff;
-}
+
+  @include tablets {
+    background: url("./../img/content/background.png") 75% 50% no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 91px;
+      background: #1968B1;
+      }
+    }
+  }
 
 .hero__container {
   display: flex;
@@ -15,6 +29,10 @@
   justify-content: space-between;
   height: 100%;
   padding: rem(25px) 0 rem(61px);
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .hero__main-title {
@@ -24,15 +42,51 @@
   font-weight: 700;
   margin-bottom: rem(17px);
   margin-top: rem(22px);
+
+  @include tablets {
+    padding: 19% 5% 0%;
+  }
+
+  @include phones {
+    font-size: rem(44px);
+    margin-bottom: rem(11px);
+    line-height: 0.9;
+    padding: 19% 0% 0%;
+  }
+
+  @include phones320 {
+    font-size: rem(33px);
+  }
 }
 
 .hero__title-desc {
   font-size: rem(21px);
   margin-bottom: rem(37px);
+  
+  @include phones {
+    font-size: rem(18px);
+    margin-bottom: rem(52px);
+  }
 }
 
 .hero__title-section {
   width: 46%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero__icon-section {
+  @include tablets {
+    display: none;
+  }
 }
 
 

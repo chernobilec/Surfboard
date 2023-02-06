@@ -1,0 +1,23 @@
+.menu {
+  @include tablets {
+    display: none;
+    // background: #1968B1;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: rem(23px);
+
+    &:last-child {
+      margin-right: rem(0px);
+    }
+}
+
+.menu__link {
+  text-decoration: none;
+}

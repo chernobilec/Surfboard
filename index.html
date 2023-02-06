@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surfboard</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -26,11 +26,16 @@
                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
-            <a href="Tel:+78009039090" class="phone-number">
+            <a href="Tel:+78009039090" class="phone-number header__phone-number">
               <span class="phone-number__icon">
                 <img src="./img/pngicons/phone.png" class="phone-number__icon-elem" alt="phone icon">
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+            <a href="" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
             </a>
           </header>
           <div class="hero__title-section">
@@ -64,7 +69,7 @@
       </section>
       <!-- "Почему?" -->
       <section class="section benefits-section">
-        <div class="container">
+        <div class="container headline__container">
           <div class="headline">
             <h2 class="section__title headline__title">почему surfboard?</h2>
             <div class="headline__subtitle">
@@ -122,8 +127,8 @@
       </section>
       <!-- Отзывы -->
       <section class="section reviews-section">
-        <div class="container">
-          <h2 class="section__title">Отзывы</h2>
+        <div class="container reviews__container">
+          <h2 class="section__title headline__title--reviews">Отзывы</h2>
           <div class="reviews">
             <div class="reviews__display">
               <div class="reviews__display-inner">
@@ -166,7 +171,7 @@
       </section>
       <!-- Форма заказа -->
       <section class="section order-section section--font-color--white">
-        <div class="container">
+        <div class="container order__container">
           <h2 class="section__title">закажите доску</h2>
           <form class="form">
             <div class="form__col">
@@ -237,6 +242,63 @@
             </div>
           </div>
         </form>
+      </section>
+      <!-- Карта -->
+      <section class="section map-section">
+        <footer class="footer">
+          <div class="container footer__container">
+            <div class="footer__column">
+              <address class="contacts">
+                <div class="contacts__place">
+                  Москва, ул. Новый Арбат, д.31/32
+                </div>
+                <a href="Tel:+78009039090" class="phone-number footer__phone-number">
+                  <span class="phone-number__icon">
+                    <img src="./img/pngicons/black-phone.png" class="phone-number__icon-elem" alt="phone icon">
+                  </span>
+                  <span class="phone-number__text phone-number__text--color--black">8 800 903 90 90</span>
+                </a>
+              </address>
+            </div>
+            <div class="footer__column">
+              <div class="social">
+                <ul class="social__items">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./img/icons/social/sprite.svg#vk">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./img/icons/social/sprite.svg#fb">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./img/icons/social/sprite.svg#in">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./img/icons/social/sprite.svg#tw">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </footer>
       </section>
     </div>
   </div>

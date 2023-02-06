@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  width: rem(142px);
+  padding: 10px 20px 10px 20px;
+  align-items: center;  
+}
+
+.social__items {
+  display: flex;
+}
+
+.social__item {
+  display: flex;
+  margin-right: rem(14px);
+
+  &:last-child {
+    margin-right: rem(60px);
+  }
+}
+
+.social__link {
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #292929;
+  }
+}
+
+.social__icon {
+  width: rem(20px);
+  height: rem(20px);
+  transition: .2s;
+}

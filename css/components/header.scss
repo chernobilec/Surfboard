@@ -2,35 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 95%;
 }
 
-.menu__list {
-  display: flex;
-  align-items: center;
+.logo__img {
+  padding-left: 3%;
 }
 
-.menu__item {
-  margin-right: rem(23px);
-
-    &:last-child {
-      margin-right: rem(0px);
-    }
-}
-
-.phone-number {
-  font-size: rem(22px);
-  text-transform: none;
-  display: flex;
-  align-items: center;
-  
-}
-
-.phone-number__icon-elem {
-  width: 12.rem(83px);
-  height: 13.rem(78px);
-  margin-right: rem(6px);
-}
-
-.menu__link {
-  text-decoration: none;
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
 }

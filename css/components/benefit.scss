@@ -5,6 +5,11 @@
   &:first-child {
     min-width: rem(285px);
   }
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__image-wrapper {
@@ -16,6 +21,11 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(16px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(12px);
+  }
 }
 
 .benefit__icon {
@@ -30,6 +40,21 @@
 .benefit__title {
   font-size: rem(27px);
   font-weight: 700;
+  color: #292929;
   margin-bottom: rem(16px);
   line-height: 1.2;
+
+  @include phones {
+    margin-top: rem(10px);
+    margin-bottom: rem(11px);
+  }
+}
+
+.benefit__text {
+
+  @include phones {
+    max-width: 290px;
+    padding: 0 2%;
+  }
+
 }

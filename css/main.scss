@@ -3,8 +3,9 @@ $basefontsize: 18px;
 
 //breakpoints
 
-$tablets: 768px;
+$tablets: 890px;
 $phones: 480px;
+$phones320: 420px;
 
 //colors
 $yellow: #FEDB3F;
@@ -40,3 +41,9 @@ $z-fixed-menu: 100;
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/menu";
+@import "components/phone-number";
+@import "components/hamburger";
+@import "components/footer";
+@import "components/contacts";
+@import "components/social";

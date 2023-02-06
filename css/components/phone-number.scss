@@ -1,0 +1,16 @@
+.phone-number {
+  font-size: rem(22px);
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  
+  &--color--black {
+    color: #292929;
+  }
+}
+
+.phone-number__icon-elem {
+  width: rem(12.83px);
+  height: rem(13.78px);
+  margin-right: rem(6px);
+}
