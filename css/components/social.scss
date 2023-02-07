@@ -1,7 +1,7 @@
 .social {
   display: flex;
-  width: rem(142px);
-  padding: 10px 20px 10px 20px;
+  // width: rem(142px);
+  // padding: 10px 20px 10px 20px;
   align-items: center;  
 }
 
@@ -14,7 +14,7 @@
   margin-right: rem(14px);
 
   &:last-child {
-    margin-right: rem(60px);
+    margin-right: 0;
   }
 }
 

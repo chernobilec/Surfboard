@@ -2,10 +2,6 @@
   text-align: center;
   line-height: 1.2;
 
-  &:first-child {
-    min-width: rem(285px);
-  }
-
   @include phones {
     display: flex;
     text-align: left;

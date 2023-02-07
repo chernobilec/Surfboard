@@ -31,7 +31,7 @@
   padding: rem(25px) 0 rem(61px);
 
   @include tablets {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -41,7 +41,6 @@
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: rem(17px);
-  margin-top: rem(22px);
 
   @include tablets {
     padding: 19% 5% 0%;

@@ -1,10 +1,11 @@
 .form {
   display: flex;
+  padding: 0 6%;
 
   @include tablets {
     flex-direction: column;
-    padding: 0 18%;
-    margin-top: rem(-15px);
+    padding: 0 11%;
+    // margin-top: rem(-15px);
   }
 
   @include phones {
@@ -66,8 +67,12 @@
   font-size: rem(14px);
 
   &--textarea {
-    height: rem(82px);
+    height: rem(152px);
     resize: none;
+
+    @include tablets {
+      height: rem(82px);
+    }
   }
 
   &:focus {
@@ -95,8 +100,6 @@
 }
 
 .form__buttons {
-  // display: flex;
-  // flex-direction: row;
   margin-top: rem(46px);
 
   @include tablets{

@@ -1,7 +1,7 @@
 .reviews__container {
 
   @include tablets {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -82,4 +82,12 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
+}
+
+.reviews__switcher-item {
+  margin-right: rem(5px);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
