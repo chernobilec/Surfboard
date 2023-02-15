@@ -59,7 +59,7 @@
   display: block;
   width: rem(91px);
   height: rem(91px);
-  background: #3A587E url(./../img/content/dropdownicon.png) center bottom 36px no-repeat;
+  background: #3A587E url(./img/content/dropdownicon.png) center bottom 36px no-repeat;
   border-radius: 4px;
   // display: flex;
   margin-bottom: rem(52px);
@@ -69,8 +69,8 @@
   //   opacity: .8;
   // }
 
-    :hover {
-      background: #3465A3 url(./../img/content/dropdownicon.png) center bottom 36px no-repeat;
+    &:hover {
+      background: #3465A3 url(./img/content/dropdownicon.png) center bottom 36px no-repeat;
       border-radius: 4px;
       // left: 0;
       // opacity: .8;
