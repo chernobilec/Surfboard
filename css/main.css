@@ -1089,18 +1089,18 @@ img {
 .products-slider__arrow--direction-left {
   width: 4%;
   height: 100%;
-  background: url(./img/icons/arrow-left.png) center center no-repeat;
+  background: url(./../img/icons/arrow-left.png) center center no-repeat;
 }
 .products-slider__arrow--direction-right {
   width: 4%;
   height: 100%;
-  background: url(./img/icons/arrow-right.png) center center no-repeat;
+  background: url(./../img/icons/arrow-right.png) center center no-repeat;
 }
 
 .product-slider__img-wrap {
   height: 100vh;
   width: 50%;
-  background: url(./img/content/board-1.png) center center no-repeat, url(./img/content/board-bg.svg) center center no-repeat;
+  background: url(./../img/content/board-1.png) center center no-repeat, url(./../img/content/board-bg.svg) center center no-repeat;
   background-size: 100%;
   margin-right: 4.5555555556rem;
 }
@@ -1126,12 +1126,12 @@ img {
   display: block;
   width: 5.0555555556rem;
   height: 5.0555555556rem;
-  background: #3A587E url(./img/content/dropdownicon.png) center bottom 36px no-repeat;
+  background: #3A587E url(./../img/content/dropdownicon.png) center bottom 36px no-repeat;
   border-radius: 4px;
   margin-bottom: 2.8888888889rem;
 }
 .product-slider__dropdown:hover {
-  background: #3465A3 url(./img/content/dropdownicon.png) center bottom 36px no-repeat;
+  background: #3465A3 url(./../img/content/dropdownicon.png) center bottom 36px no-repeat;
   border-radius: 4px;
 }
 .product-slider__dropdown:hover .product-slider__dropdown-menu {
