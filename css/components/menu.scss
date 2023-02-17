@@ -1,7 +1,18 @@
 .menu {
   @include tablets {
     display: none;
-    // background: #1968B1;
+  }
+  &--vertical {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    font-size: rem(36px);
+    color: #fff;
+    text-align: center;
+    
   }
 }
 
@@ -16,8 +27,18 @@
     &:last-child {
       margin-right: rem(0px);
     }
+
+    &--vert {
+      margin-right: 0;
+      margin-bottom: rem(12px);
+    }
 }
 
 .menu__link {
   text-decoration: none;
+
+  &--vert {
+    text-decoration: none;
+    margin-right: 0;
+  }
 }

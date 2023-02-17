@@ -1,14 +1,23 @@
 .products-slider__container {
   display: flex;
   align-items: center;
+
+    @include tablets {
+      width: 100%;
+      justify-content: center;
+    }
 }
 
-.products-slider__item {
+.products-slider__item {  
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 
-
-}
+    @include tablets {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+  } 
 
 .products-slider__arrow {
   display: flex;
@@ -19,39 +28,125 @@
       margin-right: 0;
     }
 
-    &--direction-left {
+    &--left {
       width: 4%;
       height: 100%;
       background: url(./../img/icons/arrow-left.png) center center no-repeat;
+
+      @include tablets {
+        display: none;
+      }
     }
 
-    &--direction-right {
+    &--right {
       width: 4%;
       height: 100%;
       background: url(./../img/icons/arrow-right.png) center center no-repeat;
+
+      @include tablets {
+        display: none;
+      }
     }
+
+      @include tablets {
+
+      &--left--tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: rem(15px);
+        width: 6%;
+        height: 100%;
+        background: url(./../img/icons/arrow-left.png) left center no-repeat;
+
+        @include phones320 {
+          margin-right: 0;
+        }
+      }
+
+      &--right--tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: rem(15px);
+        width: 6%;
+        height: 100%;
+        background: url(./../img/icons/arrow-right.png) right center no-repeat;
+
+        @include phones320 {
+          margin-left: 0;
+        }
+      }
+    }
+      // @include phones {
+
+
+
+      // }
+}
+
+.product-slider__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  // width: 46%;
+  width: rem(420px);
+
+  @include tablets {
+    flex-direction: row;
+    height: rem(450px);
+    width: rem(525px);
+}
+
+  @include phones320 {
+    flex-direction: row;
+    width: rem(350px);
+  }
 }
 
 .product-slider__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  width: 50%;
+  width: 85%;
   background: url(./../img/content/board-1.png) center center no-repeat,
               url(./../img/content/board-bg.svg) center center no-repeat;
   background-size: 100%;
   margin-right: rem(82px);
-}
 
-// .product-slider__img {
-//   position: relative;
-// }
+  @include tablets {
+    height: rem(450px);
+    width: rem(390px);
+    justify-content: start;
+    margin-right: 0;
+    // margin-top: rem(27px);
+    background-size: 85%;
+  }
+}
 
 .product-slider__info {
   height: 100vh;
-  width: 50%;
+  width: 46%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: rem(34px);
+
+    @include tablets {
+      // height: rem(414px);
+      // width: rem(116px);
+      // height: 100%;
+      // width: 75vw;
+      height: rem(450px);
+      width: 80%;
+      align-items: center;
+      text-align: center;
+      justify-content: start;
+      margin-right: 0;
+    }
 }
 
 .product-slider__dropdown {
@@ -61,23 +156,21 @@
   height: rem(91px);
   background: #3A587E url(./../img/content/dropdownicon.png) center bottom 36px no-repeat;
   border-radius: 4px;
-  // display: flex;
   margin-bottom: rem(52px);
-
-
 
     &:hover {
       background: #3465A3 url(./../img/content/dropdownicon.png) center bottom 36px no-repeat;
       border-radius: 4px;
 
-      .product-slider__dropdown-menu {
-        left: 0;
-        opacity: .8;
-      }
+    .product-slider__dropdown-menu {
+      left: 0;
+      opacity: .95;
     }
+  }
 
-
-    
+    @include tablets {
+      display: none;
+    }
 }
 
 
@@ -91,7 +184,6 @@
   font-size: rem(14px);
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 12px;
 }
 
 .product-slider__dropdown-menu {
@@ -106,34 +198,79 @@
   opacity: 0;
   transition: opacity .4s;
   left: -9999px;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(20px);
 }
 
-.product-slider__dropdown-item {
+.product-slider__dropdown-list {
   display: flex;
   justify-content: space-between;
 
-    .product-slider__dropdown-item-text {
-      justify-content: flex-start;
-      width: rem(124px);
-    }
+  .product-slider__dropdown-item-icon-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: rem(20px);
 
-    .product-slider__dropdown-item-icon-wrap {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      width: rem(25px);
-      height: rem(25px);
-      margin-bottom: rem(28px);
+      .product-slider__dropdown-item-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(24px);
+        height: rem(24px);
+        margin-bottom: rem(28px);
 
-        // &:first-child {
-        //  margin-top: rem(33px);
-        // }
-
-        &:last-child {
-          margin-bottom: 0;
+        &:first-child {
+          margin-top: rem(18px);
         }
 
+        &:last-child {
+          margin-bottom: rem(21px);
+        }
     }
+  }
+
+  .product-slider__dropdown-item-text-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .product-slider__dropdown-item-text {
+      display: flex;
+      align-items: center;
+      width: rem(120px);
+      height: rem(24px);
+      margin-bottom: rem(28px);
+
+        &:first-child {
+          margin-top: rem(18px);
+        }
+
+        &:last-child {
+          margin-bottom: rem(21px);
+        }
+      } 
+    }
+
+  .product-slider__dropdown-item-value-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(15px);
+
+    .product-slider__dropdown-item-value {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: rem(24px);
+      margin-bottom: rem(28px);
+  
+      &:first-child {
+        margin-top: rem(18px);
+      }
+
+      &:last-child {
+        margin-bottom: rem(21px);
+      }
+    }
+  }
 }
 
 .product-slider__title {
@@ -175,9 +312,15 @@
   align-items: center;
 
   .product-slider__cost {
+    width: rem(187px);
+    height: rem(60px);
     font-size: rem(60px);
     margin-right: rem(28px);
     color: #151515;
     font-weight: 300;
+
+    @include phones320 {
+      margin-right: 0;
+    }
   }
 }

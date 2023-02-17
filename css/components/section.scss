@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 652;
+  min-height: rem(652px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,12 +28,12 @@
   }
 }
 
-.order__container {
+// .order__container {
 
-  @include tablets {
-    // width: 100%;
-  }
-}
+//   @include tablets {
+//     // width: 100%;
+//   }
+// }
 
 .products-section {
   background-color: #F8FAF9;
