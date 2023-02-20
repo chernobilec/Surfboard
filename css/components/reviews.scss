@@ -5,7 +5,7 @@
   }
 }
 
-.reviews__display {
+.reviews__list {
   padding: rem(42px);
   background-color: #F8FAF9;
   margin-bottom: rem(15px);
@@ -15,14 +15,34 @@
   }
 }
 
-.reviews__display-inner {
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
   display: flex;
+
+  // & .active {
+  //   position: static;
+  //   opacity: 1;
+  //   pointer-events: unset;
+  // }
 
   @include tablets {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+}
+
+.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__avatar {
